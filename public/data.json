@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+      "image": "https://i.ibb.co/1LPGryF/blank-open-book-1308-22968.jpg",
+      "category": "novel"
+    },
+    {
+        "id": 2,
+      "image": "https://i.ibb.co/st8zd4B/book-with-brown-cover-1110-771.jpg",
+      "category": "thriller"
+    },
+    {
+        "id": 3,
+      "image": "https://i.ibb.co/25zpq36/open-blue-book-white-1308-69339.jpg",
+      "category": "history"
+    },
+    {
+        "id": 4,
+      "image": "https://i.ibb.co/Jm8Tnk9/hand-drawn-flat-stack-books-23-2149331315.jpg",
+      "category": "drama"
+    }
+  ]
