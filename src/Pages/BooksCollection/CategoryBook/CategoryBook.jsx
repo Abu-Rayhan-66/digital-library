@@ -13,9 +13,9 @@ const CategoryBook = ({data}) => {
             <div className="card lg:w-[500px] h-[500px] bg-base-100 shadow-xl">
   <figure><img className="w-full h-full" src={photo} alt="" /></figure>
   <div className="card-body">
-    <h2 className="card-title">Name: {name}</h2>
+    <h2 className="card-title">Book Name: {name}</h2>
     <p>Author: {author}</p>
-    <p>Author:Category: {type}</p>
+    <p>Category: {type}</p>
    <p><Rating name="customized-10" defaultValue={rating} readOnly max={10} /></p>
     <div className="card-actions justify-end">
     <Link to={`/details/${_id}`}>

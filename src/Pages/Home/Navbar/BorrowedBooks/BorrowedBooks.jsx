@@ -1,5 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../../../Components/AuthProvider/AuthProvider";
+import BorrowedBooksCard from "../BorrowedBooksCard/BorrowedBooksCard";
+
 
 
 const BorrowedBooks = () => {
@@ -8,15 +10,15 @@ const BorrowedBooks = () => {
     const currentUser = user.email
 
     const [data,setData] = useState([])
-    const [filterData,setFilterData] = useState([])
-    const [loading, setLoading] = useState(true)
+    const [userBooks,setUserBooks] = useState([])
+    
 
     useEffect(()=>{
         fetch('http://localhost:5005/borrowed')
         .then(res => res.json())
         .then(data => {
             setData(data)
-            setLoading(false)
+           
 
         })
         // const filterData = data.filter(brand => brand.brand == brand_name)
@@ -25,22 +27,23 @@ const BorrowedBooks = () => {
 
     useEffect(()=>{
         const filterDataNew = data.filter(item => item.email === currentUser)
-        setFilterData(filterDataNew)
+        setUserBooks(filterDataNew)
     },[data, currentUser])
     
-   console.log(filterData)
+   console.log(userBooks)
     console.log(data)
 
     return (
         <div>
             {
-                loading ? <div className="h-[50vh] flex justify-center"><span className="loading loading-spinner loading-lg"></span></div>:
-                <div>
-                    {
-                        filterData.map(item => <p key={item._id} >{item.name}</p>)
-                    }
-                </div>
-            }
+              (userBooks.length ==0) ? <img className="mt-10 mb-10 w-full h-[40vh] md:h-[80vh]" src="https://i.ibb.co/3MW18n8/error1.png" alt="" /> : <div>
+              {
+                  userBooks.map(books => <BorrowedBooksCard key={books._id}
+                       books={books} userBooks={userBooks} setUserBooks={setUserBooks} ></BorrowedBooksCard>)
+              }
+              </div>
+           }
+            
         </div>
     );
 };
