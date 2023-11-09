@@ -8,7 +8,7 @@ const RecentBooks = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-10 md:mx-20 gap-6">
             
             <div >
-                <img className="rounded-md h-[40vh] w-full p-4 shadow-xl" src="https://i.ibb.co/1KjFC6x/event1.png" alt="" />
+                <img className="rounded-md h-[40vh] w-full p-4 shadow-xl" src="https://i.ibb.co/hZqy9kg/stack-colorful-books-74855-314.jpg" alt="" />
                 <h2 className="text-center text-lg font-semibold">Samsung Galaxy S23 Is Now 10% Off.</h2>
                 
             </div>
@@ -42,7 +42,7 @@ const RecentBooks = () => {
         </div>
         </div>
     );
-    
+
 };
 
 export default RecentBooks;
