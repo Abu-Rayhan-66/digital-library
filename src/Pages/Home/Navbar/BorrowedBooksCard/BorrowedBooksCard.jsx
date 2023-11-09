@@ -10,13 +10,13 @@ const BorrowedBooksCard = ({ books, userBooks, setUserBooks }) => {
 
     const handleReturn = id =>{
         Swal.fire({
-            title: 'Are you sure?',
-            text: "You won't be able to revert this!",
+            title: 'Are You Sure?',
+            text: "You Want To Return It?",
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, delete it!'
+            confirmButtonText: 'Yes, Return!'
           }).then((result) => {
             if (result.isConfirmed) {
               
@@ -29,8 +29,8 @@ const BorrowedBooksCard = ({ books, userBooks, setUserBooks }) => {
 
                 if(data.deletedCount > 0){
                   Swal.fire(
-                'Deleted!',
-                'Your cart has been deleted.',
+                'Returned!',
+                'Your Book Is Returned',
                 'success'
               )
               const remainingProduct  = userBooks.filter(product => product._id !==id)
@@ -51,10 +51,10 @@ const BorrowedBooksCard = ({ books, userBooks, setUserBooks }) => {
                 <div className=" card card-side bg-blue-200 shadow-xl">
                     <figure><img className="h-[150px] w-[200px] md:h-[300px] md:w-[400px]" src={photo} alt="Movie" /></figure>
                     <div className="card-body">
-                        <h2 className="card-title">Book Name: {name}</h2>
-                        <p>Category: {type}</p>
-                        <p>Borrowed Date: {borrowedTime}</p>
-                        <p>Return Date:{date}</p>
+                        <h2 className="card-title text-blue-500">Book Name: {name}</h2>
+                        <p className="font-medium text-blue-500">Category: {type}</p>
+                        <p className="font-medium text-blue-500">Borrowed Date: {borrowedTime}</p>
+                        <p className="font-medium text-blue-500">Return Date:{date}</p>
                         <button onClick={() => handleReturn(_id)}  className="btn bg-blue-500 text-white rounded-md hover:text-black hover:bg-blue-400 w-28 text-lg font-semibold">RETURN</button>
 
                     </div>

@@ -20,6 +20,7 @@ const AllBooks = () => {
 
     return (
         <div>
+            <button className="py-3 mt-6 mx-20 bg-blue-500 text-white rounded-md hover:text-black hover:bg-blue-400 w-40 text-lg font-semibold">Available Books</button>
             {
                 allBooks.map(books => <AllBooksCard key={books._id} books={books}></AllBooksCard>)
             }

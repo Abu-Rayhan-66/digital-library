@@ -60,7 +60,7 @@ const Routes =createBrowserRouter([
             },
             {
                 path:"/update/:id",
-                element:<UpdatePage></UpdatePage>,
+                element:<PrivateRoute><UpdatePage></UpdatePage></PrivateRoute>,
                 loader:({params}) => fetch(`http://localhost:5005/books/${params.id}`)
             },
             {
@@ -71,7 +71,7 @@ const Routes =createBrowserRouter([
 
            
             
-            
+           
         ]
     }
 ])
