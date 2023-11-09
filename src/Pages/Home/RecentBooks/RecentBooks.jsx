@@ -13,22 +13,22 @@ const RecentBooks = () => {
                 
             </div>
             <div >
-                <img className="rounded-md h-[40vh] w-full p-4 shadow-xl" src="https://i.ibb.co/kxKdJ2D/event2.png" alt="" />
+                <img className="rounded-md h-[40vh] w-full p-4 shadow-xl" src="https://i.ibb.co/4tYgXJP/stack-notebooks-with-black-cover-23-2147803558.jpg" alt="" />
                 <h2 className="text-center text-lg font-semibold"> Iphone 15 Is Now 15% Off On Pre Order. </h2>
                 
             </div>
             <div >
-                <img className="rounded-md h-[40vh] w-full p-4 shadow-xl" src="https://i.ibb.co/R31TDK5/event3.png" alt="" />
+                <img className="rounded-md h-[40vh] w-full p-4 shadow-xl" src="https://i.ibb.co/ZVTD9JR/two-books-wrappers-23-2147803590.jpg" alt="" />
                 <h2 className="text-center text-lg font-semibold">Iphone 14 Is Now 20% Off.</h2>
                 
             </div>
             <div >
-                <img className="rounded-md h-[40vh] w-full p-4 shadow-xl" src="https://i.ibb.co/KWC1Njk/event4.png" alt="" />
+                <img className="rounded-md h-[40vh] w-full p-4 shadow-xl" src="https://i.ibb.co/DKjwzpB/stack-books-with-word-front-1340-27740.jpg" alt="" />
                 <h2 className="text-center text-lg font-semibold">Sony Xperia 1 Is Now 8% Off  </h2>
                 
             </div>
             <div >
-                <img className="rounded-md h-[40vh] w-full p-4 shadow-xl" src="https://i.ibb.co/2c7Hdzx/event5.png" alt="" />
+                <img className="rounded-md h-[40vh] w-full p-4 shadow-xl" src="https://i.ibb.co/vvBPzQH/color-books-reading-school-isolated-1308-33252.jpg" alt="" />
                 <h2 className="text-center text-lg font-semibold">OnePlus Nord Is Now 30% Off Because Of Green Line</h2>
                 
             </div>
