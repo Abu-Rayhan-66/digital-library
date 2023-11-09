@@ -18,7 +18,7 @@ const UpdatePage = () => {
 
         const updateProduct = {photo, name, author, type, rating}
     
-        fetch(`http://localhost:5005/books/${_id}`,{
+        fetch(`https://assignment-eleven-server-ashen.vercel.app/books/${_id}`,{
             method:'PUT',
             headers:{
                 'content-type':'application/json',

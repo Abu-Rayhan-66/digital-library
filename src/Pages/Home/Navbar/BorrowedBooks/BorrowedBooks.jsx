@@ -14,7 +14,7 @@ const BorrowedBooks = () => {
     
 
     useEffect(()=>{
-        fetch('http://localhost:5005/borrowed')
+        fetch('https://assignment-eleven-server-ashen.vercel.app/borrowed')
         .then(res => res.json())
         .then(data => {
             setData(data)

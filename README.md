@@ -1,8 +1,19 @@
-# React + Vite
+## About This Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. This website is fully responsive, so users can easily use this website in any device.
 
-Currently, two official plugins are available:
+2.User can see their borrowed date and return date from borrowed page.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3. This website has multiple login options , so users can choose their suitable login option.
+
+4. User can filter available books from all books page.
+
+5. Users can toggle between login and registration page.
+
+
+
+Client site live link of my Digital Library website: https://library-management-cdc86.web.app
+                                                    
+               
+
+                  

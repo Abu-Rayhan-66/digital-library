@@ -56,17 +56,17 @@ const Routes =createBrowserRouter([
             {
                 path:"/details/:id",
                 element:<PrivateRoute><Details></Details></PrivateRoute>,
-                loader:({params}) => fetch(`http://localhost:5005/books/${params.id}`)
+                loader:({params}) => fetch(`https://assignment-eleven-server-ashen.vercel.app/books/${params.id}`)
             },
             {
                 path:"/update/:id",
                 element:<PrivateRoute><UpdatePage></UpdatePage></PrivateRoute>,
-                loader:({params}) => fetch(`http://localhost:5005/books/${params.id}`)
+                loader:({params}) => fetch(`https://assignment-eleven-server-ashen.vercel.app/books/${params.id}`)
             },
             {
                 path:"/read/:id",
                 element:<Read></Read>,
-                loader:({params}) => fetch(`http://localhost:5005/books/${params.id}`)
+                loader:({params}) => fetch(`https://assignment-eleven-server-ashen.vercel.app/books/${params.id}`)
             }
 
            

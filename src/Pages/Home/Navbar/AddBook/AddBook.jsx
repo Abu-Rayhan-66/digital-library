@@ -20,7 +20,7 @@ const AddBook = () => {
         const allData = {photo, name, quantity, author, type, description, rating}
         console.log(photo, name, quantity, author, type, description, rating)
 
-        fetch('http://localhost:5005/books',{
+        fetch('https://assignment-eleven-server-ashen.vercel.app/books',{
             method:'POST',
             headers:{
                 'content-type':'application/json',

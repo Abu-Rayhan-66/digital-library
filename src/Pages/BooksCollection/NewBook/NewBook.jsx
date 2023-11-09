@@ -14,7 +14,7 @@ const NewBook = ({card}) => {
     const [loading, setLoading] = useState(true)
     
     useEffect(()=>{
-        fetch('http://localhost:5005/books')
+        fetch('https://assignment-eleven-server-ashen.vercel.app/books')
         .then(res => res.json())
         .then(data => {
             setData(data)

@@ -36,7 +36,7 @@ const Details = () => {
         // const updateCount= {newQuantity}
         console.log(date,email, borrowedMoment)
 
-        // fetch(`http://localhost:5005/books/${_id}`,{
+        // fetch(`https://assignment-eleven-server-ashen.vercel.app/books/${_id}`,{
         //     method:'PUT',
         //     headers:{
         //         'content-type':'application/json',
@@ -51,7 +51,7 @@ const Details = () => {
 
 
 
-        fetch('http://localhost:5005/borrowed',{
+        fetch('https://assignment-eleven-server-ashen.vercel.app/borrowed',{
             method:'POST',
             headers:{
                 'content-type':'application/json',

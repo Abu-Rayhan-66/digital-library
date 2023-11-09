@@ -20,7 +20,7 @@ const BorrowedBooksCard = ({ books, userBooks, setUserBooks }) => {
           }).then((result) => {
             if (result.isConfirmed) {
               
-              fetch(`http://localhost:5005/borrowed/${id}`,{
+              fetch(`https://assignment-eleven-server-ashen.vercel.app/borrowed/${id}`,{
                 method: "DELETE"
               })
               .then(res => res.json())
@@ -49,7 +49,7 @@ const BorrowedBooksCard = ({ books, userBooks, setUserBooks }) => {
         <div>
             <div className=" mb-8 mx-4 md:mx-20 mt-10">
                 <div className=" card card-side bg-blue-200 shadow-xl">
-                    <figure><img className="h-[150px] w-[200px] md:h-[300px] md:w-[400px]" src={photo} alt="Movie" /></figure>
+                    <figure><img className="h-full w-[400px] md:h-[300px] md:w-[400px]" src={photo} alt="Movie" /></figure>
                     <div className="card-body">
                         <h2 className="card-title text-blue-500">Book Name: {name}</h2>
                         <p className="font-medium text-blue-500">Category: {type}</p>
